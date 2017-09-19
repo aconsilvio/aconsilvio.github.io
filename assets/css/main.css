@@ -124,12 +124,18 @@ p{
 
 
 .hover-span{
-    background: white;
+    background: #ffffff;
     font-family: Lato;
     color: #005a5a;
-    padding: .5em;
+    padding: .6em;
     line-height: 1.75em;
 }
+
+.hover-header{
+    font-size: 16px;
+    font-weight: bold;
+}
+
 
 .flex-item:hover .hover-text {
     visibility:visible;
