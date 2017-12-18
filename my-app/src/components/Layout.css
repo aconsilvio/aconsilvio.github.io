@@ -1,0 +1,188 @@
+ul {
+	list-style: none;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 2em;
+}
+
+li{
+	margin-bottom: 1em;
+	font-weight: lighter;
+}
+
+li a{
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+}
+
+li a::after{
+	content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .4s;
+}
+li a:hover::after{
+	width: 100%;
+}
+
+/*li a:focus{
+	border-bottom: 1px solid black;
+}*/
+
+
+.bottomLinks{
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	font-weight: lighter;
+	padding-bottom: 1em;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.bottomLinks::after{
+	content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .4s;
+}
+.bottomLinks:hover::after{
+	width: 100%;
+}
+
+
+mark {
+    background-color: #ecff61;
+}
+
+.left {
+  min-width: 370px;
+}
+
+.inner{
+	position: fixed;
+}
+
+.right {
+  flex-grow: 1;
+  flex-basis: 370px;
+  width: 75%;
+}
+
+.parent {
+  display: flex;
+  overflow: hidden;
+  flex-flow: wrap;
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .left{
+    min-width: 200px;
+  }
+  .inner{
+  	position: static;
+  }
+}
+
+@media screen and (max-width: 867px) {
+  .main{
+  	padding: 0;
+  }
+  .inner{
+  	position: static;
+  }
+}
+
+
+p {
+	text-align: left;
+	font-weight: lighter;
+}
+
+.bottomParent{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	padding-top: 4em;
+}
+
+
+.topImage{
+	max-width: 100%;
+	height: auto;
+}
+
+.smallTopImage{
+	max-width:300px;
+}
+
+.bottomImageContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.bottomImage {
+	max-width: 48%;
+	width: 48%;
+	height: 48%;
+	flex-basis: 48%;
+	padding-bottom: 4%;
+}
+
+h4{
+	margin-top: 0;
+}
+
+h3{
+	margin-top: 0;
+}
+
+
+.linkDiv{
+	display: flex;
+	flex-direction: column;
+}
+.topLinks{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.h3Alternate{
+/*	font-weight: normal;
+*/	padding-top: 2em;
+	font-size: 1.2em;
+}
+
+
+/*.links{
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	font-weight: lighter;
+	margin-bottom: 1em;
+
+}
+
+.links:hover{
+	text-decoration: underline;
+}
+
+.links:focus{
+	border-bottom: 1px solid black;
+	text-decoration: underline;
+}*/

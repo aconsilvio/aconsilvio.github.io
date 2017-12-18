@@ -1,0 +1,8 @@
+{
+	"ibm": {
+		info: "Hello the info will be here",
+		title: "IBM Design Internship",
+		date: "Summer 2016",
+		skills: "web development, ux design, user research"
+	}
+}
