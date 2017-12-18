@@ -67,7 +67,12 @@ class Layout extends Component {
       <div className="parent">
 	      <div className="left" id="banner">
           <div className="inner">
-	        <Header onClick={() => this.updateProps("about")}/>
+                      <header>
+              <a href="#maincontent" className="hiddenLink">Skip to main content</a>
+
+              <a onClick={() => this.updateProps("front")}><h1><strong>annabel consilvio</strong></h1></a>
+             <h2><mark>designer & developer</mark></h2>
+            </header>
 	        <nav id="nav">
 	         <ul>
 	        	<li> <a href="#maincontent" onClick={() => this.updateProps("shifting")}><strong>shifting rhythms:</strong> community development</a> </li>
@@ -80,7 +85,7 @@ class Layout extends Component {
 	        	<li> <a href="#maincontent" onClick={() => this.updateProps("spoon")}><strong>share the spoon:</strong> assistive tech design</a> </li>
 	        	<li> <a href="#maincontent" onClick={() => this.updateProps("portfolio")}><strong>this portfolio:</strong> accessible web development</a> </li>
 	        	<li style={{marginTop: 2+'em'}}> <a href="#maincontent" onClick={() => this.updateProps("about")}><strong>about me / contact</strong></a> </li>
-			      <li> <a href="http://aconsilvio.github.io/newimages/AnnabelConsilvioResume.pdf" target="_blank"><strong>resume</strong></a> </li>
+			      <li> <a href={require(`./images/about/AnnabelConsilvioResume.pdf`)} target="_blank"><strong>resume</strong></a> </li>
       	</ul>
 	        </nav>
           </div>
