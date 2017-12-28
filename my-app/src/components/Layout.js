@@ -35,7 +35,6 @@ class Layout extends Component {
 			previousData: this.props.data[orderedLinks[previousIndex]],
 		});
 
-    console.log(this.state.nextData)
 
   }
 
@@ -50,18 +49,23 @@ class Layout extends Component {
     let allImages = [];
     let allAlt = [];
     let classTopImage = this.state.activeData.id === "about" ? "smallTopImage" : "topImage";
-    if(this.state.activeData.images.length !== 0){
+    console.log(this.state.activeData)
+    if(this.state.activeData.images.length !== 0 && this.state.activeData.id !== "front"){
       mainImage = this.state.activeData.root + this.state.activeData.images[0].title;
       mainAlt = this.state.activeData.images[0].description
     }
 
-    if(this.state.activeData.images.length > 1){
+    if(this.state.activeData.id === "front"){
+      for(var i = 0; i < this.state.activeData.images.length; i ++){
+        allImages.push(this.state.activeData.root + this.state.activeData.images[i].title)
+        allAlt.push(this.state.activeData.images[i].description)
+      }
+    } else if(this.state.activeData.images.length > 1){
       for(var i = 1; i < this.state.activeData.images.length; i ++){
         allImages.push(this.state.activeData.root + this.state.activeData.images[i].title)
         allAlt.push(this.state.activeData.images[i].description)
       }
     }
-    console.log(mainImage)
 
     return (
       <div className="parent">

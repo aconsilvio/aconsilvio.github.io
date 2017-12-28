@@ -140,7 +140,7 @@ const data = {
     skills: "",
     root: './images/front/',
     links: [],
-    images: [],
+    images: [{title:'uocd.jpg', description: 'An image of me and a teammate working together on a design project.'}, {title:'return.png', description: "An image of me presenting design work to another woman."}],
     id: "front"
   },
     "spoon": {
