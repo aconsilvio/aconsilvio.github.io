@@ -134,7 +134,7 @@ const data = {
     id:"practice",
   },
     "front": {
-    info: ["Hi there!", "My name is Annabel, and I'm a designer and software developer currently based in Boston, MA (and soon to be in Dublin, Ireland).", "I care about accessibility, community, and equality, and I'm excited to share some of my work with you here.  Please don't hesitate to reach out with any questions of comments you may have!"],
+    info: ["Hi there!", "My name is Annabel, and I'm a designer and software developer currently based in Boston, MA (and soon to be in Dublin, Ireland).", "I care about accessibility, community, and equality, and I'm excited to share some of my work with you here.  Please don't hesitate to reach out with any questions or comments you may have!"],
     title: "homepage",
     date: "",
     skills: "",
