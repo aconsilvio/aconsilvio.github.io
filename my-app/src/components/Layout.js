@@ -67,6 +67,18 @@ class Layout extends Component {
       }
     }
 
+    let headerSR = this.state.activeData.id === "shifting" ? <span><mark><strong>shifting rhythms:</strong> community development</mark></span> : <span><strong>shifting rhythms:</strong> community development</span>
+    let headerFront = this.state.activeData.id === "front" ? <span><mark><strong>annabel consilvio</strong></mark></span> : <strong>annabel consilvio</strong>
+    let headerSpot = this.state.activeData.id === "spotify" ? <span><mark><strong>spotify:</strong> frontend engineering</mark></span>: <span><strong>spotify:</strong> frontend engineering</span>
+    let headerPrac = this.state.activeData.id === "practice" ? <span><mark><strong>practice portal:</strong> web development</mark></span> : <span><strong>practice portal:</strong> web development </span>
+    let headerIBM = this.state.activeData.id === "ibm" ? <span><mark><strong>ibm design:</strong>  web development and design</mark></span>: <span><strong>ibm design:</strong> web development and design</span>
+    let headerWeDo = this.state.activeData.id === "wedo" ? <span><mark><strong>we do:</strong> user experience design</mark></span> : <span><strong>we do:</strong> user experience design</span>
+    let headerSpr = this.state.activeData.id === "spring" ? <span><mark><strong>spring initiative:</strong> web development</mark></span> : <span><strong>spring initiative:</strong> web development</span>
+    let headerFood = this.state.activeData.id === "food" ? <span><mark><strong>food source:</strong> user centered design</mark></span> : <span><strong>food source:</strong> user centered design</span>
+    let headerSpoon = this.state.activeData.id === "spoon" ? <span><mark><strong>share the spoon:</strong> assistive tech design</mark></span> : <span><strong>share the spoon:</strong> assistive tech design</span>
+    let headerPort = this.state.activeData.id === "portfolio" ? <span><mark><strong>this portfolio:</strong> accessible web development</mark></span> : <span><strong>this portfolio:</strong> accessible web development</span>
+    let headerAbout = this.state.activeData.id === "about" ? <span><mark><strong>about me / contact</strong></mark></span> : <strong>about me / contact</strong>
+
     return (
       <div className="parent">
 	      <div className="left" id="banner">
@@ -74,21 +86,21 @@ class Layout extends Component {
                       <header>
               <a href="#maincontent" className="hiddenLink">Skip to main content</a>
 
-              <a onClick={() => this.updateProps("front")}><h1><strong>annabel consilvio</strong></h1></a>
-             <h2><mark>designer & developer</mark></h2>
+              <a onClick={() => this.updateProps("front")}><h1><strong>{headerFront}</strong></h1></a>
+             <h2>designer & developer</h2>
             </header>
 	        <nav id="nav">
 	         <ul>
-	        	<li> <a href="#maincontent" onClick={() => this.updateProps("shifting")}><strong>shifting rhythms:</strong> community development</a> </li>
-	        	<li> <a href="#maincontent" onClick={() => this.updateProps("spotify")}><strong>spotify:</strong> frontend engineering</a> </li>
-	        	<li> <a href="#maincontent" onClick={() => this.updateProps("practice")}><strong>practice portal:</strong> web development</a> </li>
-	        	<li> <a href="#maincontent" onClick={() => this.updateProps("ibm")}><strong>ibm design:</strong> web development and design</a> </li>
-	        	<li> <a href="#maincontent" onClick={() => this.updateProps("wedo")}><strong>we do:</strong> user experience design</a> </li>
-	        	<li> <a href="#maincontent" onClick={() => this.updateProps("spring")}><strong>spring initiative:</strong> web development</a> </li>
-	        	<li> <a href="#maincontent" onClick={() => this.updateProps("food")}><strong>food source:</strong> user centered design</a> </li>
-	        	<li> <a href="#maincontent" onClick={() => this.updateProps("spoon")}><strong>share the spoon:</strong> assistive tech design</a> </li>
-	        	<li> <a href="#maincontent" onClick={() => this.updateProps("portfolio")}><strong>this portfolio:</strong> accessible web development</a> </li>
-	        	<li style={{marginTop: 2+'em'}}> <a href="#maincontent" onClick={() => this.updateProps("about")}><strong>about me / contact</strong></a> </li>
+	        	<li> <a href="#maincontent" onClick={() => this.updateProps("shifting")}>{headerSR}</a> </li>
+	        	<li> <a href="#maincontent" onClick={() => this.updateProps("spotify")}>{headerSpot}</a> </li>
+	        	<li> <a href="#maincontent" onClick={() => this.updateProps("practice")}>{headerPrac}</a> </li>
+	        	<li> <a href="#maincontent" onClick={() => this.updateProps("ibm")}>{headerIBM}</a> </li>
+	        	<li> <a href="#maincontent" onClick={() => this.updateProps("wedo")}>{headerWeDo}</a> </li>
+	        	<li> <a href="#maincontent" onClick={() => this.updateProps("spring")}>{headerSpr}</a> </li>
+	        	<li> <a href="#maincontent" onClick={() => this.updateProps("food")}>{headerFood}</a> </li>
+	        	<li> <a href="#maincontent" onClick={() => this.updateProps("spoon")}>{headerSpoon}</a> </li>
+	        	<li> <a href="#maincontent" onClick={() => this.updateProps("portfolio")}>{headerPort}</a> </li>
+	        	<li style={{marginTop: 2+'em'}}> <a href="#maincontent" onClick={() => this.updateProps("about")}>{headerAbout}</a> </li>
 			      <li> <a href={require(`./images/about/AnnabelConsilvioResume.pdf`)} target="_blank"><strong>resume</strong></a> </li>
       	</ul>
 	        </nav>
@@ -116,6 +128,7 @@ class Layout extends Component {
           console.log(require(`${imgTitle}`))
         return <img key={index}src={require(`${imgTitle}`)} alt={allAlt[index]} className="bottomImage"/>;
                   })}
+         <p style={{paddingBottom: 0, marginBottom: 0, paddingTop: 0, fontSize: 14}}><i>photo credit: {this.state.activeData.pc}</i></p>
                   </div>
          <div className="bottomParent">
          <a className="bottomLinks" href="#maincontent" onClick={() => this.updateProps(this.state.nextData.id)}><strong>next:</strong> {this.state.nextData.title}</a>

@@ -17,6 +17,7 @@ li a{
 	display: inline-block;
 }
 
+
 li a::after{
 	content: '';
     display: block;
@@ -28,6 +29,8 @@ li a::after{
 li a:hover::after{
 	width: 100%;
 }
+
+
 
 /*li a:focus{
 	border-bottom: 1px solid black;

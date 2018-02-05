@@ -17,6 +17,7 @@ const data = {
               description: "An image of a me (Annabel Consilvio)."
             }
             ],
+    pc: "aaron greiner",
     id:"about",
   },
   "shifting": {
@@ -42,10 +43,11 @@ const data = {
               description: "An image of a group of students working with a student from the class on a design workshop activity with paper and post it notes."
             },
             ],
+    pc: "shifting rhythms team 2016-2018",
     id:"shifting"
   },
   "spotify": {
-    info: ["During the summer of 2017, I got the opportunity to work on the Spotify for Artists platform with a team of two other interns.  My role was in frontend engineering, and I used React, Redux, D3.js, and Jest to work on data vizualization on the artist timeline page.","This page will be updated with more images of my work once it is released to the public. ",],
+    info: ["During the summer of 2017, I got the opportunity to work on the Spotify for Artists platform with a team of two other interns.  My role was in frontend engineering, and I used React, Redux, D3.js, and Jest to work on data vizualization on the artist timeline page.","I worked closely with two data engineers to develop an idea for a new feature, justify it to our managers, and build it with a complete data pipeline, backend, and frontend.  I was also mentored by two frontend engineers (one with a data visualization background) over the course of the summer.  Our feature was released to the Spotify for Artists community in December 2017. This page will be updated with more images of my work once it is released to the public with non-sensitive data.",],
     title: "spotify internship",
     date: "summer 2017",
     skills: "frontend engineering",
@@ -55,6 +57,7 @@ const data = {
               description: "An image of a woman listening to music through headphones with the Spotify logo over the top of it."
             }
             ],
+    pc: "spotify",
     id:"spotify"
   },
   "ibm": {
@@ -80,7 +83,8 @@ const data = {
               description: "An image of what Colab would look like when you first long into it as a user.  It contains 3 projects that each display information about who has collaborated on it, how the morale of the project has progressed over time, and its title and description."
             },
             ],
-    id:"ibm"
+    id:"ibm",
+    pc: "cody cai, kay maloney"
   },
     "bonus": {
     info: ["hello the info will be here",],
@@ -99,10 +103,11 @@ const data = {
               description: "An image of a model of a tree on the side of the road with the label Veggie Bombing: food grows everywhere."
             },
             ],
-    id:"bonus"
+    id:"bonus",
+    pc: ""
   },
     "wedo": {
-    info: ["During the fall of 2016, I worked on a team of 5 designing a mobile and web experience for couples planning their own weddings.  We used Figma and Invision to make high fidelity prototypes and mockups, and you can see some screenshots of our work below.", "We documented the project including our usability tests, competitive analysis, and design refinements in a website linked below. The premise of our final product was an application that stored all of your planning data and gave you customized, small to-dos to help keep you on track during your wedding planning process."],
+    info: ["During the fall of 2016, I worked on a team of 5 designing a mobile and web experience for couples planning their own weddings.  We used Figma and Invision to make high fidelity prototypes and mockups, and you can see in a mock-up above.", "We documented the project including our usability tests, competitive analysis, and design refinements in a website linked below. The premise of our final product was an application that stored all of your planning data and gave you customized, small to-dos to help keep you on track during your wedding planning process."],
     title: "we do",
     date: "fall 2016",
     skills: "ux design, user research, ui design",
@@ -112,7 +117,8 @@ const data = {
               description: "An image of someone using the We Do app on a mobile phone."
             }
             ],
-    id:"wedo"
+    id:"wedo",
+    pc: "we do team"
   },
     "practice": {
     info: ["In January 2017, I worked on developing a working proof-of-concept prototype for an early stage start up called Practice Portal.  The goal of the company was to show how music masters practice so that people learning new instruments had a guide on what to do, and how masters became masters.  Since a community of people existed already on Facebook that live streamed their practice sessions, my job was to siphon that community into a working prototype to see if it would be something people would want to use off Facebook.  ", "I used Angular, Node, MongoDB, Heroku, and the Facebook API to create the website.  Users can browse all recent videos, select a certain instrument they would like to see practice videos of, search by author or title of the videos, and see all existing comments from the live streams.  Since this prototype was more proof-of-concept than a full working app, commenting and uploading the videos still happens on Facebook, and the comments and videos are pulled in via the API after the user authenticates their account.  The prototype is no longer live, but you can find screenshots below along with a link to the github repository.",],
@@ -132,6 +138,7 @@ const data = {
             },
             ],
     id:"practice",
+    pc: "annabel consilvio"
   },
     "front": {
     info: ["Hi there!", "My name is Annabel, and I'm a designer and software developer currently based in Boston, MA (and soon to be in Dublin, Ireland).", "I care about accessibility, community, and equality, and I'm excited to share some of my work with you here.  Please don't hesitate to reach out with any questions or comments you may have!"],
@@ -141,10 +148,11 @@ const data = {
     root: './images/front/',
     links: [],
     images: [{title:'uocd.jpg', description: 'An image of me and a teammate working together on a design project.'}, {title:'return.png', description: "An image of me presenting design work to another woman."}],
-    id: "front"
+    id: "front",
+    pc: "brandon chiou, tim sauder"
   },
     "spoon": {
-    info: ["During the spring of 2016, I participated in a one day hackathon at MIT around accessibility.  My team of five was paired with Meghan, a 26 year old woman with daily refractory epilepsy.  Meghan was one of the sweetest people I have ever gotten to work with, and my team decided to design and create a positive experience for her that would allow for more people to be introduced to her and understand her story.", "Meghan really loved two things:  music and a black spoon.  She used this spoon to communicate her emotions to her parents, and she would occasionally give her spoon to other people to hold if she trusted them or felt comfortable with them.", "For our project, we created two things: a game that Meghan and a friend could play together to interact with each other in a way Meghan did not normally get the opportunity to do, and a storybook (another of Meghan’s favorites things) to introduce people to Meghan, her story, and how she experiences the world.  The game was based around this act of sharing the Megan’s favorite spoon.", "We created a platform for Meghan and a friend to stand on that had bass-shakers underneath, and when Meghan handed her new friend her spoon, the music would turn on below them.  When music was turned on, Meghan could not only hear it but actually feel the beat, which made her very happy.  The interaction created trust and happiness between Meghan and her new friend, which was exactly our goal for the day.", "Since this project was so short, we ended up using Makey-Makeys instead of Arduinos to create the main experience and Adobe InDesign to create the storybook.  Overall, we won 3rd place in the hackathon, but really it was Meghan who won all of our hearts.",],
+    info: ["During the spring of 2016, I participated in a one day hackathon at MIT around accessibility.  My team of five was paired with Meghan, a 26 year old woman with daily refractory epilepsy.  Meghan was one of the sweetest people I have ever gotten to work with, and my team decided to design and create a positive experience for her that would allow for more people to be introduced to her and understand her story.", "Meghan really loved two things:  music and a black spoon.  She used this spoon to communicate her emotions to her parents, and she would occasionally give her spoon to other people to hold if she trusted them or felt comfortable with them.", "For our project, we created two things: a game that Meghan and a friend could play together to interact with each other in a way Meghan did not normally get the opportunity to do, and a storybook (another of Meghan’s favorites things) to introduce people to Meghan, her story, and how she experiences the world.  The game was based around this act of sharing Megan’s favorite spoon.", "We created a platform for Meghan and a friend to stand on that had bass-shakers underneath, and when Meghan handed her new friend her spoon, the music would turn on below them.  When music was turned on, Meghan could not only hear it but actually feel the beat, which made her very happy.  The interaction created trust and happiness between Meghan and her new friend, which was exactly our goal for the day.", "Since this project was so short, we ended up using Makey-Makeys instead of Arduinos to create the main experience and Adobe InDesign to create the storybook.  Overall, we won 3rd place in the hackathon, but really it was Meghan who won all of our hearts.",],
     title: "share the spoon",
     date: "spring 2016",
     skills: "accessibility, prototyping, assistive technology",
@@ -166,10 +174,11 @@ const data = {
               description: "An drawing of a smiley face with text accompanying it that says 'Most of all, I like people.  And I would like to get to know you'. It is the final page in a book about Meghan."
             },
             ],
-    id: "spoon"
+    id: "spoon",
+    pc: "gaby clarke"
   },
     "portfolio": {
-    info: ["During the fall of 2017, I completed an independent study in accessibility in tech which culminated in the building of this, redesigned, accessible portfolio website.  Along the way, I got the opportunity to interview a variety of people about accessibility and the role it plays in technology.  Some of these people had disabilities, some worked in the space and knew it extensively, and their thoughts and commentary have made it into some of my reflections throughout the semester (linked below) as well as the overall design of this website.  I also read a lot during this semester.  Some of the books that stuck with me include Accessibility for Everyone by Laura Kalbag and Design meets Disability by Graham Pullin.", "In terms of the work I did to redesign this website, it started out looking like the image you see above - a bunch of images on a page with no indication that they are links or what content they were going to lead you to.  The colors weren’t accessible and none of the images had alt text.  The site was hard to navigate with a screen reader and was failing most accessibility standards.  This makes sense because I designed it over 2 days with little thought other than 'I need to get all my work up on the internet as soon as possible.'", "Instead, for this website, I thought about the overall structure of the site before I built anything.   I put all relevant information to the user in the sidebar on the left, so they knew exactly what they would get if they clicked on each link in the navigation and gave them an option to move to the next or previous pages at the end of the main content of each page.  I tried to describe pictures as best I could using alt-text, and did my best to use all of the right HTML tags for screen readers.  In some ways, it wasn’t as hard as I thought it would be because I thought about this whole structure from the very beginning - I wasn’t sitting there trying to make an inherently inaccessible website accessible again.  That being said, I gave myself an easy challenge since this website doesn’t require users to input forms or do much beyond view content and click on links. I do however now feel confident that I could build websites that do require these actions in an accessible way.", "I took a lot of inspiration from a plus a - Sara Hendren’s site about her assistive tech lab, and gov.uk, which are both linked below, while designing this website, but I am aware that there are many many things that can be improved about it.  As any good developer should, I believe in continuous improvement, so here are a few things I know I need to improve about this site.  Please don’t hesitate to reach out if you think there is something to add to the backlog.", "- There’s an image on the food source page that contains lots of text - this should be split up into many images with accompanying text to make it better for screen readers.", "- I would like to develop a more interesting way for alt-text to be used or displayed within the site.  Should it show up on hover of the images?  Should it go below the images?  I’m not sure yet.", "- The top of the page loads in a different place depending on which link you click.  Why does this happen?  Not sure yet, but I’m going to figure it out.", "- Are the links at the bottom of each content page as accessible as they could be?",],
+    info: ["During the fall of 2017, I completed an independent study in accessibility in tech which culminated in the building of this, redesigned, accessible portfolio website.  Along the way, I got the opportunity to interview a variety of people about accessibility and the role it plays in technology.  Some of these people had disabilities, some worked in the space and knew it extensively, and their thoughts and commentary have made it into some of my reflections throughout the semester as well as the overall design of this website.  ", "In terms of the work I did to redesign this website, it started out looking like the image you see above - a bunch of images on a page with no indication that they are links or what content they were going to lead you to.  The colors weren’t accessible and none of the images had alt text.  The site was hard to navigate with a screen reader and was failing most accessibility standards.  This makes sense because I designed it over 2 days with little thought other than 'I need to get all my work up on the internet as soon as possible.'", "Instead, for this website, I thought about the overall structure of the site before I built anything.   I put all relevant information to the user in the sidebar on the left, so they knew exactly what they would get if they clicked on each link in the navigation and gave them an option to move to the next or previous pages at the end of the main content of each page.  I tried to describe pictures as best I could using alt-text, and did my best to use all of the right HTML tags for screen readers.  In some ways, it wasn’t as hard as I thought it would be because I thought about this whole structure from the very beginning - I wasn’t sitting there trying to make an inherently inaccessible website accessible again.  That being said, I gave myself an easy challenge since this website doesn’t require users to input forms or do much beyond view content and click on links. I do however now feel confident that I could build websites that do require these actions in an accessible way.", "I took a lot of inspiration from a plus a - Sara Hendren’s site about her assistive tech lab, and gov.uk, which are both linked below, while designing this website, but I am aware that there are many many things that can be improved about it.  As any good developer should, I believe in continuous improvement, so here are a few things I know I need to improve about this site.  Please don’t hesitate to reach out if you think there is something to add to the backlog.",  "- I would like to develop a more interesting way for alt-text to be used or displayed within the site.  Should it show up on hover of the images?  Should it go below the images?  I’m not sure yet.", "- The top of the page loads in a different place depending on which link you click.  Why does this happen?  Not sure yet, but I’m going to figure it out.", "- Are the links at the bottom of each content page as accessible as they could be?",],
     title: "this portfolio",
     date: "fall 2017",
     skills: "accessible web development",
@@ -180,10 +189,12 @@ const data = {
               description: "An image of a portfolio webpage with many images and some small links to navigation at the top.  One of the images is hovered over which reveals a title and some information about the type of work done in that project."
             }
             ],
-    id:"portfolio"
+    id:"portfolio",
+    pc: "annabel consilvio"
+
   },
     "spring": {
-    info: ["During the spring of 2016, I worked with a group of five Olin students to partner with a afterschool program in Mississippi called Spring Initiative, which helps at-risk students improve both academically and socially outside of the classroom. ","We worked with the two founders of the program to create a system that allows all program administrators to track the progress of each student on a daily, weekly, monthly, or yearly basis to help them understand which aspects of the program are successful and help them obtain quantitative data as they apply for more grants.  ", "My team built this app using Angular, Node.js, Sass, MongoDB, nvD3.js, and Express.  The app includes two-pronged email authentication, data visualization, and both admin and main user accounts.  The project was done as part of Olin.js, a student-taught class on full-stack web-development at Olin.  Another student took the project over at the end of the semester to add more functionality, and it is still being used today by the organizers of Spring Initiative",],
+    info: ["During the spring of 2016, I worked with a group of five Olin students to partner with an afterschool program in Mississippi called Spring Initiative, which helps at-risk students improve both academically and socially outside of the classroom. ","We worked with the two founders of the program to create a system that allows all program administrators to track the progress of each student on a daily, weekly, monthly, or yearly basis to help them understand which aspects of the program are successful and help them obtain quantitative data as they apply for more grants.  ", "My team built this app using Angular, Node.js, Sass, MongoDB, nvD3.js, and Express.  The app includes two-pronged email authentication, data visualization, and both admin and main user accounts.  The project was done as part of Olin.js, a student-taught class on full-stack web-development at Olin.  Another student took the project over at the end of the semester to add more functionality, and it is still being used today by the organizers of Spring Initiative.",],
     title: "spring initiative",
     date: "spring 2016",
     skills: "web development, front-end development",
@@ -199,10 +210,11 @@ const data = {
               description: "An image of a short-term entry form for a student which includes fields such as behavior on this day at Spring, teach feedback from the day, and a number field from 1 to 5 indicating the students engagement with content, peers, and adults."
             },
             ],
-    id:"spring"
+    id:"spring",
+    pc: "project team"
   },
     "food": {
-    info: ["During the spring of 2016, I worked with a team of five Olin students on a collaborative design project for local, organic Massachusetts farmers.  Over nine weeks, we interviewed and designed with over a dozen farmers in order to better understand their pain points and to develop something that would be useful.", "We found that since farmers spend so much of their time working on their farms, they had little time to advocate on behalf of the larger local farming movement.  In order to help them do this without creating extra work for them, my team developed a grass-roots advocacy campaign, called Food Source.", "The campaign consisted of two main installations.  First, vegetable bombing (a twist on yarn bombing), was a way to take unused green space in cities and other urban areas and turn it into a micro-farm that is taken care of my volunteers to promote healthy, organic eating in areas where farms may not be abundant. Secondly, we developed a set of classic street signs to be used in areas to enlighten people on how close local farms and farmers markets are and encourage people to see and volunteer at these farms."],
+    info: ["During the spring of 2016, I worked with a team of five Olin students on a collaborative design project for local, organic Massachusetts farmers.  Over nine weeks, we interviewed and designed with over a dozen farmers in order to better understand their pain points and to develop something that would be useful.", "We found that since farmers spend so much of their time working on their farms, they had little time to advocate on behalf of the larger local farming movement.  In order to help them do this without creating extra work for them, my team developed a grass-roots advocacy campaign, called Food Source.", "The campaign consisted of two main installations.  First, vegetable bombing (a twist on yarn bombing), was a way to take unused green space in cities and other urban areas and turn it into a micro-farm that is taken care of by volunteers to promote healthy, organic eating in areas where farms may not be abundant. Secondly, we developed a set of classic street signs to be used in areas to enlighten people on how close local farms and farmers markets are and encourage people to see and volunteer at these farms."],
     title: "food source",
     date: "spring 2016",
     skills: "ux design, user research",
@@ -217,14 +229,15 @@ const data = {
             {title: 'IMG_1146.jpg', 
               description: "An image of a model of a tree on the side of the road with the label Veggie Bombing: food grows everywhere."
             },
-            {title: 'IMG_1185.jpg', 
-              description: "An image of a sign pointing in two different direction, indicating where the nearest farms and farmers markets are."
-            },
-            {title: 'Personas.jpg', 
-              description: "An image of the four personas we used throughout our design process. Mid-Life Macklemore is a Corporate Refugee, Second Family Shakira is a People-Seeker, Born and Raised Rhianna is a vetran farmer, and Idealistic Iggy is a quiet environmentalist."
-            },
+            // {title: 'IMG_1185.jpg', 
+            //   description: "An image of a sign pointing in two different direction, indicating where the nearest farms and farmers markets are."
+            // },
+            // {title: 'designMaterial.jpg', 
+            //   description: "An image of a design framework our team used to rank potential ideas for our final project.  The framework has two axes - impact along the bottom and difference along the y-axis.  Each idea is ranked somewhere between these two axes in a variety of colored sticky notes."
+            // },
             ],
-    id:"food"
+    id:"food",
+    pc: "aaron greiner, christine dimke"
   }
 }
 
