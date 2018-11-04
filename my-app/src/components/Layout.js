@@ -10,7 +10,7 @@ class Layout extends Component {
         super(props);
         this.state = {
         	activeData: this.props.data["front"],
-        	nextData: this.props.data["shifting"],
+        	nextData: this.props.data["hubspot"],
         	previousData: this.props.data["about"],
         }
     }
@@ -49,7 +49,7 @@ class Layout extends Component {
     let allImages = [];
     let allAlt = [];
     let classTopImage = this.state.activeData.id === "about" ? "smallTopImage" : "topImage";
-    console.log(this.state.activeData)
+
     if(this.state.activeData.images.length !== 0 && this.state.activeData.id !== "front"){
       mainImage = this.state.activeData.root + this.state.activeData.images[0].title;
       mainAlt = this.state.activeData.images[0].description
