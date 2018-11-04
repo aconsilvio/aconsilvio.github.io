@@ -3,7 +3,7 @@ import './Layout.css';
 import Header from './Header.js'
 import Main from './Main.js'
 
-const orderedLinks = ["front", "shifting", "spotify", "practice", "ibm", "wedo", "spring", "food", "spoon", "portfolio", "about"]
+const orderedLinks = ["front", "hubspot", "shifting", "spotify", "practice", "ibm", "wedo", "spring", "food", "spoon", "portfolio", "about"]
 
 class Layout extends Component {
 	constructor(props) {
@@ -67,6 +67,7 @@ class Layout extends Component {
       }
     }
 
+    let headerHS = this.state.activeData.id === "hubspot" ? <span><mark><strong>hubspot:</strong> frontend development</mark></span> : <span><strong>hubspot:</strong> frontend development</span>
     let headerSR = this.state.activeData.id === "shifting" ? <span><mark><strong>shifting rhythms:</strong> community development</mark></span> : <span><strong>shifting rhythms:</strong> community development</span>
     let headerFront = this.state.activeData.id === "front" ? <span><mark><strong>annabel consilvio</strong></mark></span> : <strong>annabel consilvio</strong>
     let headerSpot = this.state.activeData.id === "spotify" ? <span><mark><strong>spotify:</strong> frontend engineering</mark></span>: <span><strong>spotify:</strong> frontend engineering</span>
@@ -84,23 +85,24 @@ class Layout extends Component {
 	      <div className="left" id="banner">
           <div className="inner">
                       <header>
-              <a href="#maincontent" className="hiddenLink">Skip to main content</a>
+              <a href="home" className="hiddenLink">Skip to main content</a>
 
-              <a onClick={() => this.updateProps("front")}><h1><strong>{headerFront}</strong></h1></a>
+              <a href="#home" onClick={() => this.updateProps("front")}><h1><strong>{headerFront}</strong></h1></a>
              <h2>designer & developer</h2>
             </header>
 	        <nav id="nav">
 	         <ul>
-	        	<li> <a href="#maincontent" onClick={() => this.updateProps("shifting")}>{headerSR}</a> </li>
-	        	<li> <a href="#maincontent" onClick={() => this.updateProps("spotify")}>{headerSpot}</a> </li>
-	        	<li> <a href="#maincontent" onClick={() => this.updateProps("practice")}>{headerPrac}</a> </li>
-	        	<li> <a href="#maincontent" onClick={() => this.updateProps("ibm")}>{headerIBM}</a> </li>
-	        	<li> <a href="#maincontent" onClick={() => this.updateProps("wedo")}>{headerWeDo}</a> </li>
-	        	<li> <a href="#maincontent" onClick={() => this.updateProps("spring")}>{headerSpr}</a> </li>
-	        	<li> <a href="#maincontent" onClick={() => this.updateProps("food")}>{headerFood}</a> </li>
-	        	<li> <a href="#maincontent" onClick={() => this.updateProps("spoon")}>{headerSpoon}</a> </li>
-	        	<li> <a href="#maincontent" onClick={() => this.updateProps("portfolio")}>{headerPort}</a> </li>
-	        	<li style={{marginTop: 2+'em'}}> <a href="#maincontent" onClick={() => this.updateProps("about")}>{headerAbout}</a> </li>
+            <li> <a href="#hubspot" onClick={() => this.updateProps("hubspot")}>{headerHS}</a> </li>
+            <li> <a href="#shiftingrhythms" onClick={() => this.updateProps("shifting")}>{headerSR}</a> </li>
+	        	<li> <a href="#spotify" onClick={() => this.updateProps("spotify")}>{headerSpot}</a> </li>
+	        	<li> <a href="#practiceportal" onClick={() => this.updateProps("practice")}>{headerPrac}</a> </li>
+	        	<li> <a href="#ibm" onClick={() => this.updateProps("ibm")}>{headerIBM}</a> </li>
+	        	<li> <a href="#wedo" onClick={() => this.updateProps("wedo")}>{headerWeDo}</a> </li>
+	        	<li> <a href="#spring" onClick={() => this.updateProps("spring")}>{headerSpr}</a> </li>
+	        	<li> <a href="#foodsource" onClick={() => this.updateProps("food")}>{headerFood}</a> </li>
+	        	<li> <a href="#sharespoon" onClick={() => this.updateProps("spoon")}>{headerSpoon}</a> </li>
+	        	<li> <a href="#portfolio" onClick={() => this.updateProps("portfolio")}>{headerPort}</a> </li>
+	        	<li style={{marginTop: 2+'em'}}> <a href="#about" onClick={() => this.updateProps("about")}>{headerAbout}</a> </li>
 			      <li> <a href={require(`./images/about/AnnabelConsilvioResume.pdf`)} target="_blank"><strong>resume</strong></a> </li>
       	</ul>
 	        </nav>

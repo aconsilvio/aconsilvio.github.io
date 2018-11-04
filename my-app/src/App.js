@@ -7,7 +7,7 @@ import Main from './components/Main.js'
 
 const data = {
   "about": {
-    info: ["My name is Annabel Consilvio, and I'm a designer and developer from Massachusetts. I'm currently a senior at Olin College of Engineering focusing on Software Product Design (computer science + human-centered design) with an emphasis on web development. I'm passionate about making tech more accessible for everyone, creating positive experiences for people, and working at the intersection of tech and design.","Over the last few years, I've worked on front end engineering at Spotify, user experience design and web development at IBM Design, and visual design as part of the Return Design Studio."," I love thinking about and solving big problems and am particularly interested in accessibility, interdependence in society, education, and community. I am always looking to use my technical and design skills to have a positive impact in these areas.  I’m graduating in May 2018, and will be moving to Dublin to work at Hubspot as a software engineer."],
+    info: ["My name is Annabel Consilvio, and I'm a designer and developer from Massachusetts. I'm currently a software engineer at HubSpot. I'm passionate about making tech more accessible for everyone, creating positive experiences for people, and working at the intersection of tech and design.","Over the last few years, I've worked on front end engineering at Spotify, user experience design and web development at IBM Design, and visual design as part of the Return Design Studio.","I love thinking about and solving big problems and am particularly interested in how I can have a positive impact through building communities, improving education, and engaging people in politics. I’m passionate about user experience and research, data visualization, and front-end development."],
     title: "about me",
     date: "",
     skills: "",
@@ -19,6 +19,20 @@ const data = {
             ],
     pc: "aaron greiner",
     id:"about",
+  },
+    "hubspot": {
+    info: ["In August 2018, I joined HubSpot as a frontend developer on a small autonomous team building tools to help businesses survey their customers.  We use React.js and Redux to build our product alongside various libraries such as Draft.js, Selenium Chromedriver and Jasmine for testing, and Pug/Jade.  Due to the company’s global nature, we also have a focus on internationalization support (i18n) and stress continuous integration and deployment across development offices in Dublin, Ireland and Cambridge, MA."],
+    title: "hubspot",
+    date: "",
+    skills: "",
+    root: './images/hubspot/',
+    links: [{name: "hubspot", link: "https://www.hubspot.com/"}],
+    images: [{title: 'hubspot2.png', 
+              description: 'An image of the HubSpot logo.'
+            },
+            ],
+    pc: "hubspot",
+    id: "hubspot",
   },
   "shifting": {
     info: ["During my senior year at Olin College, I got the opportunity to work with a team of 8 students and 2 faculty advisors to work on community development in Coahoma County, Mississippi.  The venture of the multi-year project is a program called Shifting Rhythms, which brings technology, arts, and entrepreneurship curriculum to after school programs throughout the county in a mobile education space.  One of our key values is to work closely with the community so that it is a truly community-driven and wanted project, so we have many partners in the county that we work with as well as three key community partners that advise us on the project.","During my time working on the project, I have been involved in everything from curriculum development and play testing with students, developing and building the mobile education space inside a 7x12 foot trailer, and building relationships with community members and after school organizations throughout the county.  During the Spring of 2018, we are running a pilot version of our curriculum and mobile space that has been developed alongside the community through 450+ interactions with students and many, many interviews and co-designs with community members.",],
@@ -141,8 +155,8 @@ const data = {
     pc: "annabel consilvio"
   },
     "front": {
-    info: ["Hi there!", "My name is Annabel, and I'm a designer and software developer currently based in Boston, MA (and soon to be in Dublin, Ireland).", "I care about accessibility, community, and equality, and I'm excited to share some of my work with you here.  Please don't hesitate to reach out with any questions or comments you may have!"],
-    title: "homepage",
+    info: ["My name is Annabel, and I'm a designer and software developer currently based in Dublin, Ireland working as a front end developer at HubSpot.", "I care about accessibility, community, and equality, and I'm excited to share some of my work with you here.  Please don't hesitate to reach out with any questions or comments you may have!"],
+    title: "hello!",
     date: "",
     skills: "",
     root: './images/front/',
