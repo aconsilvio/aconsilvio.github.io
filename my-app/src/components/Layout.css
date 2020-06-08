@@ -61,7 +61,7 @@ li a:hover::after{
 
 
 mark {
-    background-color: #ecff61;
+    background-color: #c6e3e4;
 }
 
 .left {
@@ -69,7 +69,7 @@ mark {
 }
 
 .inner{
-	position: fixed;
+	position: static;
 }
 
 .right {
@@ -80,7 +80,6 @@ mark {
 
 .parent {
   display: flex;
-  overflow: hidden;
   flex-flow: wrap;
 }
 
@@ -90,23 +89,12 @@ mark {
 	padding: 1em;
 }
 
-@media screen and (max-width: 600px) {
-  .left{
-    min-width: 200px;
-  }
+@media screen and (min-width: 1400px) {
   .inner{
-  	position: static;
+  	position: fixed;
   }
 }
 
-@media screen and (max-width: 867px) {
-  .main{
-  	padding: 0;
-  }
-  .inner{
-  	position: static;
-  }
-}
 
 
 p {
@@ -123,7 +111,7 @@ p {
 
 
 .topImage{
-	max-width: 100%;
+	max-width: 800px;
 	height: auto;
 }
 

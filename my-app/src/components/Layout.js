@@ -3,7 +3,7 @@ import './Layout.css';
 import Header from './Header.js'
 import Main from './Main.js'
 
-const orderedLinks = ["front", "hubspot", "shifting", "spotify", "practice", "ibm", "wedo", "spring", "food", "spoon", "portfolio", "about"]
+const orderedLinks = ["front", "hubspot", "shifting", "spotify", "practice", "ibm", "wedo", "spring", "food", "spoon", "portfolio"]
 
 class Layout extends Component {
 	constructor(props) {
@@ -11,7 +11,7 @@ class Layout extends Component {
         this.state = {
         	activeData: this.props.data["front"],
         	nextData: this.props.data["hubspot"],
-        	previousData: this.props.data["about"],
+        	previousData: this.props.data["portfolio"],
         }
     }
 
@@ -48,19 +48,19 @@ class Layout extends Component {
     let mainAlt="";
     let allImages = [];
     let allAlt = [];
-    let classTopImage = this.state.activeData.id === "about" ? "smallTopImage" : "topImage";
+    let classTopImage = this.state.activeData.id === "front" ? "smallTopImage" : "topImage";
 
-    if(this.state.activeData.images.length !== 0 && this.state.activeData.id !== "front"){
+    if(this.state.activeData.images.length !== 0){
       mainImage = this.state.activeData.root + this.state.activeData.images[0].title;
       mainAlt = this.state.activeData.images[0].description
     }
 
-    if(this.state.activeData.id === "front"){
-      for(var i = 0; i < this.state.activeData.images.length; i ++){
-        allImages.push(this.state.activeData.root + this.state.activeData.images[i].title)
-        allAlt.push(this.state.activeData.images[i].description)
-      }
-    } else if(this.state.activeData.images.length > 1){
+    // if(this.state.activeData.id === "front"){
+    //   for(var i = 0; i < this.state.activeData.images.length; i ++){
+    //     allImages.push(this.state.activeData.root + this.state.activeData.images[i].title)
+    //     allAlt.push(this.state.activeData.images[i].description)
+    //   }
+    if(this.state.activeData.images.length > 1){
       for(var i = 1; i < this.state.activeData.images.length; i ++){
         allImages.push(this.state.activeData.root + this.state.activeData.images[i].title)
         allAlt.push(this.state.activeData.images[i].description)
@@ -78,17 +78,16 @@ class Layout extends Component {
     let headerFood = this.state.activeData.id === "food" ? <span><mark><strong>food source:</strong> user centered design</mark></span> : <span><strong>food source:</strong> user centered design</span>
     let headerSpoon = this.state.activeData.id === "spoon" ? <span><mark><strong>share the spoon:</strong> assistive tech design</mark></span> : <span><strong>share the spoon:</strong> assistive tech design</span>
     let headerPort = this.state.activeData.id === "portfolio" ? <span><mark><strong>this portfolio:</strong> accessible web development</mark></span> : <span><strong>this portfolio:</strong> accessible web development</span>
-    let headerAbout = this.state.activeData.id === "about" ? <span><mark><strong>about me / contact</strong></mark></span> : <strong>about me / contact</strong>
 
     return (
       <div className="parent">
 	      <div className="left" id="banner">
           <div className="inner">
-                      <header>
+            <header>
               <a href="home" className="hiddenLink">Skip to main content</a>
 
               <a href="#home" onClick={() => this.updateProps("front")}><h1><strong>{headerFront}</strong></h1></a>
-             <h2>designer & developer</h2>
+             <h2>developer & designer</h2>
             </header>
 	        <nav id="nav">
 	         <ul>
@@ -102,8 +101,7 @@ class Layout extends Component {
 	        	<li> <a href="#foodsource" onClick={() => this.updateProps("food")}>{headerFood}</a> </li>
 	        	<li> <a href="#sharespoon" onClick={() => this.updateProps("spoon")}>{headerSpoon}</a> </li>
 	        	<li> <a href="#portfolio" onClick={() => this.updateProps("portfolio")}>{headerPort}</a> </li>
-	        	<li style={{marginTop: 2+'em'}}> <a href="#about" onClick={() => this.updateProps("about")}>{headerAbout}</a> </li>
-			      <li> <a href={require(`./images/about/AnnabelConsilvioResume.pdf`)} target="_blank"><strong>resume</strong></a> </li>
+			      <li style={{marginTop: 2+'em'}}> <a href={require(`./images/about/AnnabelConsilvioResume.pdf`)} target="_blank"><strong>resume</strong></a> </li>
       	</ul>
 	        </nav>
           </div>
@@ -118,7 +116,7 @@ class Layout extends Component {
         return <p key={ index }>{text}</p>;
                   })}
                   {this.state.activeData.links.length > 0 && <div className="linkDiv">
-                    <h3 className="h3Alternate">relevant links</h3>
+                    <h3 className="h3Alternate">relevant links and resources</h3>
                     {this.state.activeData.links.map(function(linkObj, index){
                       return   <div className="smallDiv" key={index}><a href={linkObj.link} key={ index } className="bottomLinks" target="_blank"><strong>{linkObj.name}</strong></a></div>;
                      })}

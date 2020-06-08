@@ -6,41 +6,46 @@ import Layout from './components/Layout.js'
 import Main from './components/Main.js'
 
 const data = {
-  "about": {
-    info: ["My name is Annabel Consilvio, and I'm a designer and developer from Massachusetts. I'm currently a software engineer at HubSpot. I'm passionate about making tech more accessible for everyone, creating positive experiences for people, and working at the intersection of tech and design.","Over the last few years, I've worked on front end engineering at Spotify, user experience design and web development at IBM Design, and visual design as part of the Return Design Studio.","I love thinking about and solving big problems and am particularly interested in how I can have a positive impact through building communities, improving education, and engaging people in politics. I’m passionate about user experience and research, data visualization, and front-end development."],
-    title: "about me",
+  "front": {
+    info: ["My name is Annabel, and I'm a developer and designer currently based in Cambridge, Massachusetts. I am a front end developer at HubSpot, where I help built React components for our design system, Canvas. I'm passionate about accessibility, creating positive experiences for people, and working at the intersection of tech and design.","Over the last few years, I've worked on front end engineering at Spotify and user experience design and web development at IBM Design. I also spent a year working with communities in Mississippi to help develop and launch an afterschool program for underserved students, called Shifting Rhythms.","I love thinking about and solving big problems and am particularly interested in how I can have a positive impact through building communities and improving education and policy. I’m passionate about user experience and research, and bring a user-focused view to all of my work."],
+    title: "hi there!",
     date: "",
     skills: "",
     root: './images/about/',
     links: [{name: "email", link: "mailto:annabel.consilvio@gmail.com"},{name: "github", link: "https://github.com/aconsilvio"},{name: "linkedin", link: "https://www.linkedin.com/in/annabelconsilvio"},],
-    images: [{title: 'me.jpeg', 
+    images: [{title: 'metwo.jpg', 
               description: "An image of a me (Annabel Consilvio)."
             }
             ],
-    pc: "aaron greiner",
-    id:"about",
+    pc: "annabel consilvio",
+    id:"front",
   },
     "hubspot": {
-    info: ["In August 2018, I joined HubSpot as a frontend developer on a small autonomous team building tools to help businesses survey their customers.  We use React.js and Redux to build our product alongside various libraries such as Draft.js, Selenium Chromedriver and Jasmine for testing, and Pug/Jade.  Due to the company’s global nature, we also have a focus on internationalization support (i18n) and stress continuous integration and deployment across development offices in Dublin, Ireland and Cambridge, MA."],
+    info: ["In August 2018, I joined HubSpot as a frontend developer on a small autonomous team building tools to help businesses survey their customers.  We use React.js and Redux to build our product alongside various libraries such as Draft.js, Selenium Chromedriver and Jasmine for testing, and Pug/Jade.  Due to the company’s global nature, we also have a focus on internationalization support (i18n) and stress continuous integration and deployment across development offices in Dublin, Ireland and Cambridge, MA.", "During my year on this team, I was responsible for designing and developing new features, improving the coverage and reliability of our testing infrastructure, and improving performance reliability of our app. I worked closely with our product designer and our product manager to help plan new feature work for the front-end developers on the team.", "Starting in October 2019, I moved teams and am now working to build React components (called UIComponents) for the HubSpot design system, Canvas. Our team builds reusable components for the ~300 frontend developers at HubSpot, keeping accessibility, internationalization, reliability, and maintainability all at the forefront of our process. We work closely with the design team to develop new components for the Canvas system and place a big emphasis on addressing user feedback and questions as quickly as possible. I am currently leading a project to update our documentation system for UIComponents based on feedback from our users, creating system level changes to make components easier to find and use."],
     title: "hubspot",
     date: "",
     skills: "",
     root: './images/hubspot/',
-    links: [{name: "hubspot", link: "https://www.hubspot.com/"}],
-    images: [{title: 'hubspot2.png', 
-              description: 'An image of the HubSpot logo.'
+    links: [{name: "hubspot", link: "https://www.hubspot.com/"}, {name: "canvas design system", link: "https://canvas.hubspot.com/"}],
+    images: [{title: 'input.png', 
+              description: 'An image of a documentation page inside the HubSpot Canvas design system, showing how input fields are used and styled in a variety of cases.'
+            },
+            {title: 'calender.png', 
+              description: 'An image of a documentation page inside the HubSpot Canvas design system, showing how a calendar input is styled.'
+            },{title: 'hubspot2.png', 
+              description: 'An image of the HubSpot feedback application showing a webpage and tools to edit that webpage.'
             },
             ],
     pc: "hubspot",
     id: "hubspot",
   },
   "shifting": {
-    info: ["During my senior year at Olin College, I got the opportunity to work with a team of 8 students and 2 faculty advisors to work on community development in Coahoma County, Mississippi.  The venture of the multi-year project is a program called Shifting Rhythms, which brings technology, arts, and entrepreneurship curriculum to after school programs throughout the county in a mobile education space.  One of our key values is to work closely with the community so that it is a truly community-driven and wanted project, so we have many partners in the county that we work with as well as three key community partners that advise us on the project.","During my time working on the project, I have been involved in everything from curriculum development and play testing with students, developing and building the mobile education space inside a 7x12 foot trailer, and building relationships with community members and after school organizations throughout the county.  During the Spring of 2018, we are running a pilot version of our curriculum and mobile space that has been developed alongside the community through 450+ interactions with students and many, many interviews and co-designs with community members.",],
+    info: ["During my senior year at Olin College, I got the opportunity to work with a team of 8 students and 2 faculty advisors to work on community development in Coahoma County, Mississippi.  The venture of the multi-year project is a program called Shifting Rhythms, which brings technology, arts, and entrepreneurship curriculum to after school programs throughout the county in a mobile education space.  One of our key values is to work closely with the community so that it is a truly community-driven and wanted project, so we have many partners in the county that we work with as well as three key community partners that advise us on the project. The team of students in Massachusetts provides whatever support we can to the team in Mississippi in whatever ways possible.","During my time working on the project, I was involved in everything from curriculum development and play testing with students, developing and building the mobile education space inside a 7x12 foot trailer, and building relationships with community members and after school organizations throughout the county.  During the Spring of 2018, we ran a pilot version of our curriculum and mobile space that has been developed alongside the community through 450+ interactions with students and many, many interviews and co-designs with community members. The pilot was a success, and since I have moved on from the team has been expanded to include more students and more curriculum.", "Part of my final work on Shifting Rhythms was helping to prepare materials and start planning for a grant proposal from the Walton Family Foundation. Since then, the team behind Shifting Rhythms has received over $150,000 in grants from the Walton Family Foundation and many others to keep the program running. The team has hired many local community leaders to run activities, work one on one with students, and help shape the future of the program as a whole, and the team in Massachusetts is still working on curriculum development and overall support for the community in Coahoma County."],
     title: "shifting rhythms",
     date: "2017/2018",
     skills: "user centered design, co-designs, curriculum development, space design",
     root: './images/shifting/',
-    links: [{link: "https://www.facebook.com/shiftingrhythms/", name:"link to facebook page"}],
+    links: [{link: "https://www.facebook.com/shiftingrhythms/", name:"facebook page"}, {link: "https://www.instagram.com/shiftingrhythms/", name: "instagram page"}, {name: "article from the walton family foundation", link: "https://www.waltonfamilyfoundation.org/stories/home-region/designing-a-future-of-creativity-opportunity-in-the-delta"}],
     images: [{title: 'records.jpg', 
               description: "An image of students working on building record players."
             },
@@ -153,17 +158,6 @@ const data = {
             ],
     id:"practice",
     pc: "annabel consilvio"
-  },
-    "front": {
-    info: ["My name is Annabel, and I'm a designer and software developer currently based in Dublin, Ireland working as a front end developer at HubSpot.", "I care about accessibility, community, and equality, and I'm excited to share some of my work with you here.  Please don't hesitate to reach out with any questions or comments you may have!"],
-    title: "hello!",
-    date: "",
-    skills: "",
-    root: './images/front/',
-    links: [],
-    images: [{title:'uocd.jpg', description: 'An image of me and a teammate working together on a design project.'}, {title:'return.png', description: "An image of me presenting design work to another woman."}],
-    id: "front",
-    pc: "brandon chiou, tim sauder"
   },
     "spoon": {
     info: ["During the spring of 2016, I participated in a one day hackathon at MIT around accessibility.  My team of five was paired with Meghan, a 26 year old woman with daily refractory epilepsy.  Meghan was one of the sweetest people I have ever gotten to work with, and my team decided to design and create a positive experience for her that would allow for more people to be introduced to her and understand her story.", "Meghan really loved two things:  music and a black spoon.  She used this spoon to communicate her emotions to her parents, and she would occasionally give her spoon to other people to hold if she trusted them or felt comfortable with them.", "For our project, we created two things: a game that Meghan and a friend could play together to interact with each other in a way Meghan did not normally get the opportunity to do, and a storybook (another of Meghan’s favorites things) to introduce people to Meghan, her story, and how she experiences the world.  The game was based around this act of sharing Megan’s favorite spoon.", "We created a platform for Meghan and a friend to stand on that had bass-shakers underneath, and when Meghan handed her new friend her spoon, the music would turn on below them.  When music was turned on, Meghan could not only hear it but actually feel the beat, which made her very happy.  The interaction created trust and happiness between Meghan and her new friend, which was exactly our goal for the day.", "Since this project was so short, we ended up using Makey-Makeys instead of Arduinos to create the main experience and Adobe InDesign to create the storybook.  Overall, we won 3rd place in the hackathon, but really it was Meghan who won all of our hearts.",],
